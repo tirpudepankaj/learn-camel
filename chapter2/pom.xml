@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>camel.code.devloafer.pankaj</groupId>
+    <artifactId>learn-camel</artifactId>
+    <version>0.0.1</version>
+  </parent>
+  
+  <groupId>camel.code.devloafer.pankaj.chapter2</groupId>
+  <artifactId>chapter2</artifactId>
+  <name>Learn Camel :: Chapter 2</name>
+  <packaging>jar</packaging>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <camel-version>2.23.2</camel-version>
+    <activemq-core-version>5.7.0</activemq-core-version>
+    <slf4j-api-version>1.7.7</slf4j-api-version>
+    <logback-version>1.1.2</logback-version>
+  </properties>
+  
+  <dependencies>
+    
+    <dependency>
+     <groupId>org.apache.camel</groupId>
+     <artifactId>camel-jms</artifactId>
+     <version>${camel-version}</version>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.apache.activemq/activemq-core -->
+    <dependency>
+      <groupId>org.apache.activemq</groupId>
+      <artifactId>activemq-core</artifactId>
+      <version>${activemq-core-version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j-api-version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback-version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-core</artifactId>
+      <version>${logback-version}</version>
+    </dependency>
+    
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
